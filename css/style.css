@@ -1,0 +1,804 @@
+body{
+    background-color: #f5f5f5;
+}
+header{
+    background-image: url(./../images/intro-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+nav{
+    z-index: 999;
+}
+.nav-logo{
+    color: white;
+}
+.nav-p{
+    transition: all .5s ease-in-out;
+    background-color: transparent;
+    padding: 0 1rem;
+    padding-top: 1.563rem;
+    padding-bottom: 1.563rem;
+}
+.nav-scroll{
+    transition: all .5s ease-in-out;
+    background-color: white;
+    padding: 0 1rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0px 6px 9px 0px rgb(0 0 0 / 6%);
+}
+.nav-link{
+    color: white;
+}
+.nav-link-b{
+    color: #0078FF;
+}
+.nav-title{
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+.navbar-nav li{
+    margin: 0 0.5rem;
+    font-weight: 600;
+    
+}
+.navbar-nav li a{
+    transition: all 0.5s ease-in-out;
+    position: relative;
+}
+.navbar-nav li a:hover{
+    color: #0078ff;
+}
+.navbar-nav li a:hover::before{
+    content: "";
+    animation-name: line-animation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    left: 0.5rem;
+    bottom: 0;
+}
+@keyframes line-animation {
+    0%{
+        width: 0;
+        border-bottom: 3px solid #0078FF;
+    }
+    100%{
+        width: 2rem;
+        border-bottom: 3px solid #0078FF;
+    }
+}
+/* .container{
+    max-width: 1140px;
+} */
+header h1{
+    font-size: 4.5rem;
+}
+.intro-subtitle{
+    font-size: 2.5rem;
+}
+.intro-subtitle::after{
+    content: "";
+    animation-name: typing;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+@keyframes typing{
+    0%{
+        content: "|";
+    }
+    1%{
+        content: "C|";
+    }
+    2%{
+        content: "CE|";
+    }
+    3%{
+        content: "CEO|";
+    }
+    4%{
+        content: "CEO D|";
+    }
+    5%{
+        content: "CEO De|";
+    }
+    6%{
+        content: "CEO Dev|";
+    }
+    7%{
+        content: "CEO DevF|";
+    }
+    8%{
+        content: "CEO DevFo|";
+    }
+    9%{
+        content: "CEO DevFol|";
+    }
+    10%{
+        content: "CEO DevFoli|";
+    }
+    11%{
+        content: "CEO DevFolio|";
+    }
+    12%{
+        content: "CEO DevFoli|";
+    }
+    12.5%{
+        content: "CEO DevFol|";
+    }
+    13%{
+        content: "CEO DevFo|";
+    }
+    13.5%{
+        content: "CEO DevF|";
+    }
+    14%{
+        content: "CEO Dev|";
+    }
+    14.5%{
+        content: "CEO De|";
+    }
+    15%{
+        content: "CEO D|";
+    }
+    15.5%{
+        content: "CEO |";
+    }
+    16%{
+        content: "CEO|";
+    }
+    16.5%{
+        content: "CE|";
+    }
+    17%{
+        content: "C|";
+    }
+    17.5%{
+        content: "|";
+    }
+    18%{
+        content: "W|";
+    }
+    19%{
+        content: "We|";
+    }
+    20%{
+        content: "Web|";
+    }
+    21%{
+        content: "Web |";
+    }
+    22%{
+        content: "Web D|";
+    }
+    23%{
+        content: "Web De|";
+    }
+    24%{
+        content: "Web Dev|";
+    }
+    25%{
+        content: "Web Deve|";
+    }
+    26%{
+        content: "Web Devel|";
+    }
+    27%{
+        content: "Web Develo|";
+    }
+    28%{
+        content: "Web Develop|";
+    }
+    29%{
+        content: "Web Develope|";
+    }
+    30%{
+        content: "Web Developer|";
+    }
+    31%{
+        content: "Web Develope|";
+    }
+    31.5%{
+        content: "Web Develop|";
+    }
+    32%{
+        content: "Web Develo|";
+    }
+    32.5%{
+        content: "Web Devel|";
+    }
+    33%{
+        content: "Web Deve|";
+    }
+    33.5%{
+        content: "Web Dev|";
+    }
+    34%{
+        content: "Web De|";
+    }
+    35%{
+        content: "Web Des|";
+    }
+    36%{
+        content: "Web Desi|";
+    }
+    37%{
+        content: "Web Desig|";
+    }
+    38%{
+        content: "Web Design|";
+    }
+    39%{
+        content: "Web Designe|";
+    }
+    40%{
+        content: "Web Designer|";
+    }
+    41%{
+        content: "Web Designe|";
+    }
+    41.5%{
+        content: "Web Design|";
+    }
+    42%{
+        content: "Web Desig|";
+    }
+    42.5%{
+        content: "Web Desi|";
+    }
+    43%{
+        content: "Web Des|";
+    }
+    43.5%{
+        content: "Web De|";
+    }
+    44%{
+        content: "Web D|";
+    }
+    44.5%{
+        content: "Web |";
+    }
+    45%{
+        content: "Web|";
+    }
+    45.5%{
+        content: "We|";
+    }
+    46%{
+        content: "W|";
+    }
+    46.5%{
+        content: "|";
+    }
+    47%{
+        content: "F|";
+    }
+    48%{
+        content: "Fr|";
+    }
+    49%{
+        content: "Fro|";
+    }
+    50%{
+        content: "Fron|";
+    }
+    51%{
+        content: "Front|";
+    }
+    52%{
+        content: "Fronte|";
+    }
+    53%{
+        content: "Fronten|";
+    }
+    54%{
+        content: "Frontend|";
+    }
+    55%{
+        content: "Frontend |";
+    }
+    56%{
+        content: "Frontend D|";
+    }
+    57%{
+        content: "Frontend De|";
+    }
+    58%{
+        content: "Frontend Dev|";
+    }
+    59%{
+        content: "Frontend Deve|";
+    }
+    60%{
+        content: "Frontend Devel|";
+    }
+    61%{
+        content: "Frontend Develo|";
+    }
+    62%{
+        content: "Frontend Develop|";
+    }
+    63%{
+        content: "Frontend Develope|";
+    }
+    64%{
+        content: "Frontend Developer|";
+    }
+    65%{
+        content: "Frontend Develope|";
+    }
+    65.5%{
+        content: "Frontend Develop|";
+    }
+    66%{
+        content: "Frontend Develo|";
+    }
+    66.5%{
+        content: "Frontend Devel|";
+    }
+    67%{
+        content: "Frontend Deve|";
+    }
+    67.5%{
+        content: "Frontend Dev|";
+    }
+    68%{
+        content: "Frontend De|";
+    }
+    68.5%{
+        content: "Frontend D|";
+    }
+    69%{
+        content: "Frontend |";
+    }
+    69.5%{
+        content: "Frontend|";
+    }
+    70%{
+        content: "Fronten|";
+    }
+    70.5%{
+        content: "Fronte|";
+    }
+    71%{
+        content: "Front|";
+    }
+    71.5%{
+        content: "Fron|";
+    }
+    72%{
+        content: "Fro|";
+    }
+    72.5%{
+        content: "Fr|";
+    }
+    73%{
+        content: "F|";
+    }
+    73.5%{
+        content: "|";
+    }
+    74%{
+        content: "G|";
+    }
+    75%{
+        content: "Gr|";
+    }
+    76%{
+        content: "Gra|";
+    }
+    77%{
+        content: "Grap|";
+    }
+    78%{
+        content: "Graph|";
+    }
+    79%{
+        content: "Graphi|";
+    }
+    80%{
+        content: "Graphic|";
+    }
+    81%{
+        content: "Graphic |";
+    }
+    82%{
+        content: "Graphic D|";
+    }
+    83%{
+        content: "Graphic De|";
+    }
+    84%{
+        content: "Graphic Des|";
+    }
+    85%{
+        content: "Graphic Desi|";
+    }
+    86%{
+        content: "Graphic Desig|";
+    }
+    87%{
+        content: "Graphic Design|";
+    }
+    88%{
+        content: "Graphic Designe|";
+    }
+    89%{
+        content: "Graphic Designer|";
+    }
+    90%{
+        content: "Graphic Designe|";
+    }
+    90.5%{
+        content: "Graphic Design|";
+    }
+    91%{
+        content: "Graphic Desig|";
+    }
+    91.5%{
+        content: "Graphic Desi|";
+    }
+    92%{
+        content: "Graphic Des|";
+    }
+    92.5%{
+        content: "Graphic De|";
+    }
+    93%{
+        content: "Graphic D|";
+    }
+    93.5%{
+        content: "Graphic |";
+    }
+    94%{
+        content: "Graphic|";
+    }
+    94.5%{
+        content: "Graphi|";
+    }
+    95%{
+        content: "Graph|";
+    }
+    95.5%{
+        content: "Grap|";
+    }
+    96%{
+        content: "Gra|";
+    }
+    96.5%{
+        content: "Gr|";
+    }
+    97%{
+        content: "G|";
+    }
+    97.5%{
+        content: "|";
+    }
+    98%{
+        content: "";
+    }
+}
+/* ===================================================== */
+.new-sec{
+    padding-top: 4rem;
+}
+.about{
+    padding: 3rem;
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 3rem;
+    z-index: 2;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+}
+.title-about{
+    font-weight: 600;
+    color: #1e1e1e;
+    font-size: 1.1rem;
+}
+.skill-mf .progress {
+    background-color: #cde1f8;
+    margin: 0.5rem 0 1.2rem 0;
+    border-radius: 0;
+    height: 0.7rem;
+}
+.skill-mf span {
+    color: #4e4e4e;
+}
+.about-me h5{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+.about-me h5::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 6rem;
+    border-bottom: 3px solid #0078FF;
+}
+/* =============================================== */
+.section-title{
+    margin-bottom: 4rem;
+    text-align: center;
+}
+.section-title h3{
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.section-title p{
+    position: relative;
+    padding-bottom: 1rem;
+}
+.section-title p::after{
+    content: "";
+    position: absolute;
+    left: calc(50% - 20px);
+    bottom: 0;
+    width: 40px;
+    margin: 0 auto;
+    border-bottom: 5px solid #0078FF;
+}
+.service{
+    background-color: #fff;
+    padding: 2.5rem 1.3rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+}
+.icon{
+    height: 100px;
+    width: 100px;
+    font-size: 4rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 1rem auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px #0078ff;
+}
+.service-text h2{
+    font-size: 1.4rem;
+}
+.service-text p{
+    color: #4e4e4e;
+}
+/* ================================================= */
+.counter{
+    background-image: url(./../images/counters-bg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    padding: 8rem 0;
+}
+.layer{
+    background-color: #0078FF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+}
+.counter-icon{
+    height: 60px;
+    width: 60px;
+    line-height: 1.8;
+    box-shadow: 0 0 0 10px #cde1f8;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.counter-num{
+    font-size: 2rem;
+    margin: 0;
+}
+.counter-item{
+    position: relative;
+    color: white;
+    margin-bottom: 1.8rem;
+}
+/* ================================================== */
+.sect-pad{
+    padding-top: 4rem;
+}
+.work-item{
+    background-color: white;
+    margin-bottom: 3rem;
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+    cursor: pointer;
+}
+.work-content {
+    padding: 2rem 3% 1rem 4%;
+}
+.work-img{
+    overflow: hidden;
+}
+.work-img img{
+    transition: all 0.5s ease-in-out;
+}
+.work-item:hover img{
+    transform: scale(1.2);
+}
+.work-content h2{
+    font-size: 1.2rem;
+}
+.work-content .w-more{
+    font-size: .8rem;
+    color: #4e4e4e;
+}
+.w-more span{
+    color: #0078FF;
+}
+.w-like{
+    color: #0078FF;
+    font-size: 2.5rem;
+}
+/* ======================================== */
+.testmonial{
+    background-image: url(./../images/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    padding: 8rem 0;
+}
+.testmonial-img{
+    width: auto;
+}
+.carousel-item p{
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding: 0 13rem;
+}
+.carousel-item i{
+    font-size: 2rem;
+    color: #0078ff;
+    background-color: #fff;
+    width: 52px;
+    height: 52px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    line-height: 1.6;
+}
+.carousel-indicators [data-bs-target]{
+    width: 18px;
+    height: 7px;
+    margin: auto 5px;
+    transition: all .6s ease-in-out;
+}
+.carousel-indicators .active{
+    background-color: #1b1b1b;
+    width: 25px;
+}
+/* ===================================== */
+.card-img{
+    position: relative;
+}
+.card-img::after{
+    content:"Travel";
+    position: absolute;
+    bottom: -16px;
+    left: 40%;
+    right: 40%;
+    text-align: center;
+    background-color: #0078FF;
+    color: white;
+    padding: 0 15px 5px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.card a{
+    color: #1e1e1e;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    
+}
+.card a:hover{
+    color: #0078FF;
+}
+.card-item{
+    margin-bottom: 3rem;
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+}
+.card-body .card-title{
+    font-size: 1.3rem;
+    margin: 0.6rem 0 0.75rem;
+}
+.card-description{
+    color: #1e1e1e;
+    margin-bottom: 1rem;
+}
+.avatar {
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+    overflow: hidden;
+}
+/* =========================================== */
+#contact{
+    background-image: url(./../images/overlay-bg.jpg);
+    margin-top: 4rem;
+    position: relative;
+}
+.box-shadow-full{
+    padding: 3rem;
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 3rem;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+}
+.title-box-2 {
+    margin-bottom: 3rem;
+}
+.title-left {
+    font-size: 2rem;
+    position: relative;
+}
+.title-left::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    bottom: -12px;
+}
+.button-msg{
+    padding: 0.9rem 2.3rem;
+    font-size: 1.2rem;
+    border-radius: 5rem;
+    background-color: #0078ff;
+    color: #fff;
+    border-color: #cde1f8;
+}
+.more-info ul span{
+    color: #0078ff;
+    margin-right: 10px;
+    line-height: 2rem;
+}
+.socials span{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    font-size: 1.7rem;
+    border-radius: 50%;
+    line-height: 1.4;
+    margin: 0 15px 0 0;
+    box-shadow: 0 0 0 3px #0078ff;
+    text-align: center;
+    transition: all 500ms ease;
+}
+.socials a{
+    color: #1e1e1e;
+    transition: all 0.5s ease-in-out;
+}
+.socials span:hover{
+    background-color: #0078ff;
+    color: #fff;
+    box-shadow: 0 0 0 3px #cde1f8;
+}
+/* ================================= */
+footer{
+    padding-bottom: 4rem;
+}
+.back-to-top {
+    position: fixed;
+    background: #0078ff;
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 11;
+}
+.back-to-top i{
+    padding-top: 13px;
+}
